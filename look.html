@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .main-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 1100px;
+            height: 90vh;
+            background-color: rgba(10, 25, 47, 0.9);
+            display: flex;
+            border-radius: 15px;
+            overflow: hidden;
+            color: #ccd6f6;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+        }
+
+        .left-part {
+            width: 250px;
+            background-color: rgba(17, 34, 64, 0.95);
+            padding: 30px 20px;
+            overflow-y: auto;
+        }
+
+        .left-part nav ul {
+            list-style: none;
+        }
+
+        .left-part nav ul li {
+            margin: 20px 0;
+        }
+
+        .left-part nav ul li a {
+            color: #64ffda;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .left-part nav ul li a:hover {
+            color: #00e676;
+        }
+
+        .right-part {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            color: #64ffda;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            color: #8892b0;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                height: 95vh;
+            }
+
+            .left-part {
+                width: 100%;
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .left-part nav ul {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .right-part {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="new-background.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="main-container">
+            <div class="left-part">
+                <nav>
+                    <ul>
+                        <li><a href="#about"><i class="fa-solid fa-flag"></i>About</a></li>
+                        <li><a href="#skills"><i class="fa-solid fa-code"></i>Skills</a></li>
+                        <li><a href="#jobs"><i class="fa-solid fa-building-columns"></i>Jobs</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-code"></i>Projects</a></li>
+                        <li><a href="#education"><i class="fa-solid fa-building-columns"></i>Education</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahul-kumar-717856275/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                        <li><a href="https://github.com/rk409" target="_blank"><i
+                                    class="fa-brands fa-github"></i>Github</a>
+                        </li>
+                        <li><a href="https://t.me/yourhandle" target="_blank"><i
+                                    class="fa-brands fa-telegram"></i>Telegram</a></li>
+                        <li><a href="tel:8595033855"><i class="fa-solid fa-phone"></i>Phone</a></li>
+                        <li><a href="mailto:rahul0306kr@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-part">
+                <section class="section" id="about">
+                    <h2>About</h2>
+                    <p>This is the About section content...</p>
+                </section>
+
+                <section class="section" id="skills">
+                    <h2>Skills</h2>
+                    <p>List of skills will go here...</p>
+                </section>
+
+                <section class="section" id="jobs">
+                    <h2>Jobs</h2>
+                    <p>Work experience and job details...</p>
+                </section>
+
+                <section class="section" id="projects">
+                    <h2>Projects</h2>
+                    <p>Your projects will be listed here...</p>
+                </section>
+
+                <section class="section" id="education">
+                    <h2>Education</h2>
+                    <p>Educational background and qualifications...</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
